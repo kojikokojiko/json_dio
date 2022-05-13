@@ -28,10 +28,10 @@ class HomePage extends ConsumerWidget {
                         context: context,
                         builder: (context) {
                           return SimpleDialog(
-                            title: Text(post.title!),
+                            title: Text(post.title),
                             children: [
                               SimpleDialogOption(
-                                child: Text(post.body!),
+                                child: Text(post.body),
                               ),
                             ],
                           );
@@ -39,8 +39,8 @@ class HomePage extends ConsumerWidget {
                       );
                     },
                     child: ListTile(
-                      title: Text(post.title!),
-                      subtitle: Text(post.body!),
+                      title: Text(post.title),
+                      subtitle: Text(post.body),
                       trailing: const Icon(Icons.more_vert),
                     ),
                   ),

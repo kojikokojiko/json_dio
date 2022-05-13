@@ -18,7 +18,7 @@ class Post {
   final String title;
   final String body;
 
-  Post copyWith({String? id, String? phoneNumber}) {
+  Post copyWith({String? title, String? body}) {
     return Post(
       title: title ?? this.title,
       body: body ?? this.body,
